@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bare tests</title>
+  <link rel="stylesheet" href="./resources/qunit.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+      <ul class="parent">
+          <li class="child1">
+            Child1
+          </li>
+          <li class="child2">
+            Child2
+          </li>
+          <li class="child3">
+            Child3
+          </li>
+          <li class="child4">
+            Child4
+          </li>
+          <li>
+          <ul class="parent1">
+              <li class="sib test">
+              sib1
+              </li>
+              <li class="sib">
+              sib1
+              </li>
+              <li class="sib">
+              sib1
+              </li>
+              <li>
+              sib1
+              </li>
+          </ul>
+          </li>
+      </ul>
+  </div>
+  <script src="./../src/bare.js"></script>
+  <script src="./resources/qunit.js"></script>
+  <script src="./resources/tests.js"></script>
+</body>
+</html>
