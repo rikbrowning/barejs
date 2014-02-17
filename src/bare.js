@@ -92,7 +92,7 @@
 			matcher = elem.matches || elem.webkitMatchesSelector || elem.mozMatchesSelector || elem.msMatchesSelector;
 		}
 		elem=elem.parentNode;
-		while(elem){
+		while(elem!==document){
 			//if we have a matcher then use it.
 			if(matcher && matcher.bind(elem)(match))
 				matched.push(elem);
